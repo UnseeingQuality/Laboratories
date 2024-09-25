@@ -1,5 +1,5 @@
 def encrypt_caesar(plaintext,shift):
-    encrypted_text = ""
+    ciphertext  = ""
     mx_big_let_code = 90
     mn_big_let_code = 65
     is_let_sml = 0
@@ -23,12 +23,12 @@ def encrypt_caesar(plaintext,shift):
 
         else:
             new_letter = letter
-        encrypted_text += new_letter
+        ciphertext += new_letter
 
-    return encrypted_text
+    return ciphertext 
 
 def decrypt_caesar(ciphertext, shift):
-    decrypted_text = ""
+    plaintext = ""
     mx_big_let_code = 90
     mn_big_let_code = 65
     is_let_sml = 0
@@ -55,9 +55,9 @@ def decrypt_caesar(ciphertext, shift):
 
         else:
             new_letter = letter
-        decrypted_text += new_letter
+        plaintext += new_letter
 
-    return decrypted_text
+    return plaintext
 
 
 print(encrypt_caesar('zZAAaaBBzzzCC!!! ',3))
